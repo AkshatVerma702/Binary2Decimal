@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binary To Decimal Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <h2 class="title"><u>Binary to Decimal Converter</u></h2>
+    <div class="main-content">
+        
+        <div class="to-from">
+            <div>
+                From: &nbsp
+                <input type="text" placeholder="Binary" size=15 readonly>
+            </div>
+            <div>
+                To: &nbsp
+                <input type="text" placeholder="Decimal" size=15 readonly>
+            </div>
+        </div>
+        <br>
+        <div class="input">
+            Enter the Binary Number: &nbsp
+            <input id="binary" type="text" placeholder=" (Should contain only 0s and 1s)" size=30 style="height:25px">
+        </div>
+        
+        <div class="button-area1">
+            <button id="btn" class="button1" onclick="conversion()" style="position: absolute; left: 159px;">= Confirm</button>
+        </div>
+
+        <div class="button-area2">
+            <button onlick="res()" id="reset" class="button2" style="position: absolute; left: 245px;">Reset</button>
+        </div>
+
+        <div class="button-area3">
+            <button class="button3" style="position: absolute; left: 315px">Swap</button>
+        </div>
+
+        <br><br><br>
+        <div class="result">
+            Decimal Result: <br>
+            <textarea id="decimal" class="result-area" name="result-area" id="result" cols="42" rows="4" placeholder="Result appears here"></textarea>
+        </div>
+    </div>
+    <script src="main.js"></script>
+
+</body>
+</html>
